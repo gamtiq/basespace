@@ -1,0 +1,30 @@
+{
+  "name": "basespace",
+  "version": "0.0.1",
+  "description": "Functions to create namespaces inside objects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gamtiq/basespace.git"
+  },
+  "keywords": [
+    "namespace",
+    "ns",
+    "space",
+    "object"
+  ],
+  devDependencies: {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "homepage": "https://github.com/gamtiq/basespace",
+  "author": "Denis Sikuler",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/gamtiq/basespace/issues"
+  }
+}

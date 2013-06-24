@@ -1,0 +1,19 @@
+{
+    "name": "basespace",
+    "repo": "gamtiq/basespace",
+    "description": "Functions to create namespaces inside objects",
+    "version": "0.0.1",
+    "keywords": [
+        "namespace",
+        "ns",
+        "space",
+        "object"
+    ],
+    "dependencies": {},
+    "development": {},
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": [
+        "index.js"
+    ]
+}
