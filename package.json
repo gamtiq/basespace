@@ -16,7 +16,7 @@
     "space",
     "object"
   ],
-  devDependencies: {
+  "devDependencies": {
     "mocha": "*",
     "chai": "*"
   },
