@@ -18,6 +18,10 @@ Then:
 
     component install gamtiq/basespace
 
+### AMD, &lt;script&gt;
+
+Use `dist/basespace.js` or `dist/basespace.min.js` (minified version).
+
 ## Usage
 
 ### Node, Component
@@ -25,18 +29,37 @@ Then:
     var ns = require("basespace");
     ...
 
-## Examples
+### AMD
 
-    var app = {
-        space: ns.space
-    };
-    ns(["model", "ui.dialog", "ui.list", "ui.list.cyclic", "util"], app);
-    app.space("ui.menu", "template");
-    app.space("data").util = {...};
+```js
+define(["path/to/dist/basespace.js"], function(ns) {
+    ...
+});
+```
+
+### &lt;script&gt;
+
+```html
+<script type="text/javascript" src="path/to/dist/basespace.js"></script>
+<script type="text/javascript">
+    // basespace is available via basespace field of window object
+    var ns = basespace;
+    ...
+</script>
+```
+
+## Example
+
+```js
+var app = {
+    space: ns.space
+};
+ns(["model", "ui.dialog", "ui.list", "ui.list.cyclic", "util"], app);
+app.space("ui.menu", "template");
+app.space("data").util = {...};
+```
 
 ## API
-
-    var ns = require("basespace");
 
 ### ns(namespaces: Array|String, [context: Object], [value])
 

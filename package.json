@@ -1,6 +1,6 @@
 {
   "name": "basespace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Functions to create namespaces inside objects",
   "main": "index.js",
   "directories": {
@@ -18,7 +18,11 @@
   ],
   "devDependencies": {
     "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-umd": "~1.3.0"
   },
   "homepage": "https://github.com/gamtiq/basespace",
   "author": "Denis Sikuler",

@@ -15,13 +15,13 @@ describe("basespace", function() {
         expect, ns;
     
     // node
-    if (typeof chai === "undefined") {
+    if (typeof basespace === "undefined") {
         ns = require("../index");
-        expect = require("chai").expect;
+        expect = require("./lib/chai").expect;
     }
     // browser
     else {
-        ns = require("basespace");
+        ns = basespace;
         expect = chai.expect;
     }
     
