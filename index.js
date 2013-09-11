@@ -26,9 +26,6 @@ function namespace(names, context, value) {
         if (! context) {
             context = (function() {return this;}).call(null);
         }
-        if (! bLastValue) {
-            value = {};
-        }
         for (nI = 0, nL = names.length; nI < nL; nI++) {
             namePart = names[nI].split(".");
             space = context;
@@ -43,7 +40,7 @@ function namespace(names, context, value) {
                 }
                 else {
                     space = ! (sName in space) || bLastValue
-                                ? (space[sName] = value)
+                                ? ( space[sName] = (bLastValue ? value : {}) )
                                 : space[sName];
                 }
             }

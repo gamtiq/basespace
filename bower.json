@@ -1,0 +1,25 @@
+{
+  "name": "basespace",
+  "main": ["dist/basespace.js", "dist/basespace.min.js"],
+  "version": "0.0.3",
+  "homepage": "https://github.com/gamtiq/basespace",
+  "authors": [
+    "Denis Sikuler"
+  ],
+  "description": "Functions to create namespaces inside objects",
+  "keywords": [
+    "namespace",
+    "ns",
+    "space",
+    "object"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build",
+    "test",
+    "tests"
+  ]
+}

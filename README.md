@@ -10,15 +10,17 @@ Functions to create namespaces inside objects.
 
 ### Component
 
-Install component:
-
-    npm install -g component
-
-Then:
-
     component install gamtiq/basespace
 
-### AMD, &lt;script&gt;
+### Jam
+
+    jam install basespace
+
+### Bower
+
+    bower install basespace
+
+### AMD, script tag
 
 Use `dist/basespace.js` or `dist/basespace.min.js` (minified version).
 
@@ -26,8 +28,18 @@ Use `dist/basespace.js` or `dist/basespace.min.js` (minified version).
 
 ### Node, Component
 
-    var ns = require("basespace");
+```js
+var ns = require("basespace");
+...
+```
+
+### Jam
+
+```js
+require(["basespace"], function(ns) {
     ...
+});
+```
 
 ### AMD
 
@@ -37,9 +49,10 @@ define(["path/to/dist/basespace.js"], function(ns) {
 });
 ```
 
-### &lt;script&gt;
+### Bower, script tag
 
 ```html
+<!-- Use bower_components/basespace/dist/basespace.js if the library was installed via Bower -->
 <script type="text/javascript" src="path/to/dist/basespace.js"></script>
 <script type="text/javascript">
     // basespace is available via basespace field of window object

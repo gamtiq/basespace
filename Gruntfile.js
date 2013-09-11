@@ -27,6 +27,10 @@ module.exports = function(grunt) {
             }
         },
         
+        mochacli: {
+            lib: {}
+        },
+        
         uglify: {
             minify: {
                 src: "dist/basespace.js",
@@ -48,11 +52,13 @@ module.exports = function(grunt) {
     
     // Plugins
     grunt.loadNpmTasks("grunt-contrib-jshint");
+    grunt.loadNpmTasks("grunt-mocha-cli");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-umd");
     
     // Tasks
     grunt.registerTask("build", ["umd", "uglify"]);
-    grunt.registerTask("default", ["jshint"]);
-    grunt.registerTask("all", ["jshint", "build"]);
+    grunt.registerTask("test", ["mochacli"]);
+    grunt.registerTask("default", ["jshint", "mochacli"]);
+    grunt.registerTask("all", ["default", "build"]);
 };
