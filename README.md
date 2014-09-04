@@ -8,17 +8,21 @@ Functions to create namespaces inside objects.
 
     npm install basespace
 
-### Component
+### [Component](http://component.io)
 
     component install gamtiq/basespace
 
-### Jam
+### [Jam](http://jamjs.org)
 
     jam install basespace
 
-### Bower
+### [Bower](http://bower.io)
 
     bower install basespace
+
+### [SPM](http://spmjs.io)
+
+    spm install numgen
 
 ### AMD, script tag
 
@@ -26,7 +30,7 @@ Use `dist/basespace.js` or `dist/basespace.min.js` (minified version).
 
 ## Usage
 
-### Node, Component
+### Node, Component, SPM
 
 ```js
 var ns = require("basespace");

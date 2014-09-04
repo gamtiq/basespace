@@ -44,7 +44,8 @@ module.exports = function(grunt) {
                 src: "index.js",
                 dest: "dist/basespace.js",
                 objectToExport: "namespace",
-                globalAlias: "basespace"
+                globalAlias: "basespace",
+                indent: "    "
             }
         }
         
