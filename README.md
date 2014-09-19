@@ -92,6 +92,11 @@ Create the specified `namespace` inside `this` object.
 
 Return the value for the last of created names/fields.
 
+## Related projects
+
+* [extend](https://github.com/gamtiq/extend)
+* [mixing](https://github.com/gamtiq/mixing)
+
 ## Licence
 
 MIT
