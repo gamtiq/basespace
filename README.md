@@ -8,7 +8,7 @@ Functions to create namespaces inside objects.
 
     npm install basespace
 
-### [Component](http://component.io)
+### [Component](https://github.com/componentjs/component)
 
     component install gamtiq/basespace
 
