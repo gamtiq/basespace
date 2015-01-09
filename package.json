@@ -1,6 +1,6 @@
 {
   "name": "basespace",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Functions to create namespaces inside objects",
   "main": "index.js",
   "directories": {

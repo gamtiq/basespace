@@ -1,3 +1,7 @@
+### 0.1.0 / 2015-01-10
+
+* migration to [Component](https://github.com/componentjs/component) 1.0
+
 ### 0.0.2 / 2013-09-04
 
 * add `Gruntfile`
